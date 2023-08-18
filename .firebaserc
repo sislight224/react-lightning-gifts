@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "lightning-in-a-box"
+  },
+  "targets": {
+    "lightning-in-a-box": {
+      "hosting": {
+        "staging": [
+          "lightning-gifts-dev"
+        ],
+        "production": [
+          "lightning-in-a-box"
+        ]
+      }
+    }
+  }
+}

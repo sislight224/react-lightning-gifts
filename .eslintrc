@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "H": true,
+        "mapsjs": true
+    },
+    "rules": {
+        "max-len": ["error", { "ignoreStrings": true, "ignoreTemplateLiterals": true, "code": 160 }],
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "never",
+            "imports": "never",
+            "exports": "never",
+            "functions": "ignore"
+        }],
+        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+        "no-param-reassign": ["error", { "props": false }],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "function-paren-newline": "off",
+        "import/extensions": ["error", "never"],
+        "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": ["error", { "ignore": ["lib", "modules", "components", "utils", "public", "config"] }],
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "components": [ "Link" ],
+            "specialLink": [ "to", "hrefLeft", "hrefRight" ],
+            "aspects": [ "noHref", "invalidHref", "preferButton" ]
+        }],
+        "react/forbid-prop-types": ["error", { "forbid": ["any"] }],
+        "react/static-property-placement": "off",
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-one-expression-per-line": "off",
+        "react/no-did-update-set-state": "off",
+        "react/destructuring-assignment": "off"
+    }
+}

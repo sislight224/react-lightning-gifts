@@ -1,0 +1,13 @@
+build/
+public/
+artifacts/*
+dist
+artifacts/
+coverage/
+node_modules/
+results/
+tmp/
+.nyc*
+*.spec.js
+*.log
+*.tap
